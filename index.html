@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" href="estilo.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="movil.css" />
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <Script src='wow.min.js'></Script>
+  <link rel="stylesheet" href="hover.css">
+  <script src="https://kit.fontawesome.com/e3805e7bb5.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="responsiveslides.min.js"></script>
+  <link rel="stylesheet" href="fancybox/jquery.fancybox.css" />
+  <script src="js/jquery.tinycarousel.js"></script>
+  <script src="js/jquery.tinycarousel.min.js"></script>
+  <script src="fancybox/jquery.fancybox.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyecto Final</title>
+  <script>
+    $(function () {
+      $("#slider4").responsiveSlides({
+        auto: 30000,
+        pager: false,
+        nav: true,
+        speed: 500,
+        namespace: "callbacks",
+        before: function () {
+          $('.events').append("<li>before event fired.</li>");
+        },
+        after: function () {
+          $('.events').append("<li>after event fired.</li>");
+        }
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#slider_fotos").tinycarousel();
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class="menufi">
+
+    <header>
+      <div class="container_encabezado">
+        <div class="direcciones ancho">
+          <div class="container_direcciones">
+            <a href="#"><i class="fa-regular fa-envelope"></i>info@example.com</a>
+            <a href="#"><i class="fa-solid fa-location-dot"></i> 25/B Milford Road, New York</a>
+            <a href="#"><i class="fa-solid fa-phone-flip"></i> +2 123 654 7898</a>
+          </div>
+          <div class="container_redessociales">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+          </div>
+        </div>
+      </div>
+    </header>
+
+<!-- Menu -->
+    <nav>
+      <div class=" menu">
+        <div class="btn-menu">
+          <div class="logo" >
+            <img src="imagenes/logo.png" alt="Logo de la página"/>
+          </div>
+
+          <div class="boton-menu" id="icoMenu">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </div>
+        </div>
+
+        <div class="empresa" id="navMenu">
+          <a href="#inicio1" class="hvr-float">Home</a>
+          <a href="#inicio2" class="hvr-float">About</a>
+          <a href="#inicio3" class="hvr-float">Pages</a>
+          <a href="#inicio4" class="hvr-float">Service</a>
+          <a href="#inicio5" class="hvr-float">Project</a>
+          <a href="#inicio6" class="hvr-float">Blog</a>
+          <a href="#inicio7" class="hvr-float">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+<!-- Fin Menu -->
+  </div>
+
+  <!-- boton Subir -->
+  <i id="subir" class="fa-solid fa-angle-up"></i>
+  <!-- Fin Boton Subir -->
+
+
+  <!-- iniciomodal -->
+  <div id="modal" class="contenedor_transparente">
+    <div id="modal-content" class="contenedor_blanco">
+      <div class="encabezado">
+        <h3 style="color: black"> <span style="color: orange;">CONTACT</span> US</h3>
+        <i id="cerrar_btn" class="fa-solid fa-circle-xmark" style="color: #fba209;" onclick="cerrarModal()"></i><br>
+      </div>
+          <div class="form2">
+            <form action="" class="form">
+
+              <input type="text" class="modabtn" placeholder="NOMBRE" id="txt_isim" name="name" required />
+
+
+
+              <input type="email" class="modabtn" placeholder="CORREO" id="txt_eposta" name="email" required />
+
+
+              <input type="text" class="modabtn" placeholder="NUMERO DE TELEFONO" id="txt_telefon" name="telefon"
+                minlength="10" maxlength="10" required /> <br> <br>
+
+              <input type="text" class="modabtn" placeholder="DIRECCION" id="txt_telefon" name="telefon"
+                minlength="50" maxlength="60" required />
+
+              <div class="form__grup">
+                <button type="submit" class="custom-button" href="index.html">SEND</button>
+              </div>
+              <br />
+            </form>
+          </div>
+      <br />
+      </form>
+      <p class="text-services">
+        It is a long established fact that a reader will be distracted by the readable content of a page when looking at
+        its layout.
+      </p>
+    </div>
+  </div>
+  </div>
+  <!-- finmodal -->
+
+
+<!-- Slider -->
+  <div class="callbacks_container" id="inicio1">
+    <ul class="rslides" id="slider4">
+      <li>
+        <img src="imagenes/slider-1.jpg" alt="">
+        <p class="caption ">WE CARE ABOUT <span style="color: orange;">YOUR<br><br> <br>PEST </span> INFESTION</p>
+      </li>
+      <li>
+        <img src="imagenes/slider-2.jpg" alt="">
+        <p class="caption">WE CARE ABOUT <span style="color: orange;">YOUR<br><br> <br>PEST </span> INFESTION </p>
+      </li>
+      <li>
+        <img src="imagenes/slider-3.jpg" alt="">
+        <p class="caption">WE CARE ABOUT <span style="color: orange;">YOUR<br><br> <br>PEST </span> INFESTION</p>
+      </li>
+    </ul>
+  </div>
+  <!-- Fin del Slider -->
+
+  <!-- Seccion Modal -->
+  <section class="conta" id="inicio2">
+    <h1>Get Your Service</h1><br>
+    <select name="" class="btnop">
+      <option value="" class="btnop">Select Your Service</option>
+      <option value="" class="btnop">Residencial Pest Control</option>
+      <option value="">Commercial Pest Control</option>
+      <option value="">Industrial Pest Control</option>
+    </select>
+    <input type="text" placeholder="Your Email" class="btnop">
+    <input type="text" placeholder="Your Name" class="btnop">
+    <input type="text" placeholder="Your Phone" class="btnop">
+    <a href="#" value="Get Start" class=" hvr-forward btnen " onclick="abrirModal()">Get Start &nbsp; <i
+        class="fa-solid fa-arrow-right-long" onclick="abrirModal"></i> </a>
+  </section>
+
+  <!-- Fin seccion Modal -->
+
+
+
+<!-- HOVER.CSS -->
+
+  <section>
+    <div class="ofrece ">
+      <article class="asu hvr-grow-rotate wow animate__animated animate__swing">
+        <div>
+          <aside class="foto wow animate__animated animate__swing">
+            <img src="imagenes/user-128.png" alt="" />
+          </aside>
+        </div>
+        <h4>Experts Staff</h4>
+        <p class="contlo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo impedit, officiis, vero iusto
+          voluptatibus
+        </p>
+      </article>
+
+      <article class="asu hvr-grow-rotate wow animate__animated animate__swing">
+        <div class="">
+          <aside class="foto">
+            <img src="imagenes/49728.png" alt="" />
+          </aside>
+        </div>
+        <h4>Quality Work</h4>
+        <p class="contlo ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo impedit, officiis, vero iusto
+          voluptatibus
+        </p>
+      </article>
+
+      <article class="asu hvr-grow-rotate wow animate__animated animate__swing">
+        <div class="">
+          <aside class="foto">
+            <img src="imagenes/comwork.png" alt="" />
+          </aside>
+        </div>
+        <h4>Affordable Price</h4>
+        <p class="contlo ">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. In explicabo impedit, officiis, vero iusto
+          voluptatibus
+        </p>
+      </article>
+    </div>
+  </section><br><br><br>
+  <!-- Fin HOVER.CSS -->
+
+  <!-- ACORDEON -->
+  <section class="ancho dos divisor" id="inicio3">
+    <div class="columna">
+      <section class="ancho divisor"> <br>
+        <h2 class="acor"> WE OFFERS BEST YOUR <br> <br><span style="color: orange;">PEST CONTROL </span> SERVICE</h2>
+      </section> <br>
+      <div class="acordeon">
+        <div id="titulo1" class="alineado">
+          <div class="iconos">
+            <i class="fa-solid fa-plus mas1"></i>
+            <i class="fa-solid fa-minus menos1"></i>
+          </div>
+
+          <h3 id="miTexto">Do you provide any scripts with your templates?</h3>
+
+        </div>
+
+        <div id="contenido1" class="info">
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour, or randomised words which don't look even slightly believable.</p><br>
+        </div>
+      </div>
+
+      <div class="acordeon">
+        <div id="titulo2" class="alineado">
+          <div class="iconos">
+            <i class="fa-solid fa-plus mas1"></i>
+            <i class="fa-solid fa-minus menos1"></i>
+          </div>
+
+          <h3 id="miTexto2">What do I receive when I order a template?</h3>
+
+        </div>
+
+        <div id="contenido2" class="info">
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour, or randomised words which don't look even slightly believable.</p><br>
+        </div>
+      </div>
+
+      <div class="acordeon">
+        <div id="titulo3" class="alineado">
+          <div class="iconos">
+            <i class="fa-solid fa-plus mas1"></i>
+            <i class="fa-solid fa-minus menos1"></i>
+          </div>
+
+          <h3 id="miTexto3">In what formats are your templates available?</h3>
+
+        </div>
+
+        <div id="contenido3" class="info">
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour, or randomised words which don't look even slightly believable.</p><br>
+        </div>
+      </div>
+
+      <div class="acordeon">
+        <div id="titulo4" class="alineado">
+          <div class="iconos">
+            <i class="fa-solid fa-plus mas1"></i>
+            <i class="fa-solid fa-minus menos1"></i>
+          </div>
+
+          <h3 id="miTexto4">Do you provide any scripts with your templates?</h3>
+
+        </div>
+
+        <div id="contenido4" class="info">
+          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            in some form, by injected humour, or randomised words which don't look even slightly believable.</p><br>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="columna">
+      <img src="imagenes/01.jpg" alt="">
+    </div>
+  </section>
+  <br>
+  <!-- Fin Acordeon -->
+
+
+<!-- Slide -->
+  <section class="container_lightbox" id="inicio4">
+    <section class="ancho divisor"> <br>
+      <h2 class="acor"><span style="color: orange;">PEST</span> PROBLEM</h2>
+    </section>
+    <div id="galeria" class="contenedor_fotos ancho ">
+      <a href="imagenes/01 (1).jpg" class="fancybox hvr-grow" title="" rel="gallery">
+        <img class="img" src="imagenes/01 (1).jpg" alt="Re" /> 
+      </a>
+      <a href="imagenes/02.jpg" class="fancybox hvr-grow" title="" rel="gallery">
+        <img class="img" src="imagenes/02.jpg" alt="" />
+      </a>
+      <a href="imagenes/03.jpg" class="fancybox hvr-grow" title="" rel="gallery">
+        <img class="img" src="imagenes/03.jpg" alt="" />
+      </a>
+      <a href="imagenes/04.jpg" class="fancybox hvr-grow" title="" rel="gallery">
+        <img class="img" src="imagenes/04.jpg" alt="" />
+      </a>
+    </div>
+  </section>
+  <!-- Fin slide -->
+
+
+
+  <!-- hover redes -->
+  <section class="container_ourteam" id="inicio5">
+    <div class="titulo_ourteam ancho">
+      <section class="ancho divisor"> <br>
+        <h2 class="acor"> WHAT <span style="color: orange;">OFTER </span></h2>
+      </section>
+      <br>
+      <div class="personas_ourteam">
+        <figure class="persona">
+          <img src="imagenes/010.jpg" alt="">
+          <div class="iconos_figure">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+          <div class="descripcion_figure">
+            <h3>Sebastian Turner</h3>
+            <p>Business Consultant</p>
+          </div>
+        </figure>
+        <figure class="persona">
+          <img src="imagenes/012.jpg" alt="">
+          <div class="iconos_figure">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+          <div class="descripcion_figure">
+            <h3>Stefina Williams</h3>
+            <p>Web Developer</p>
+          </div>
+        </figure>
+        <figure class="persona">
+          <img src="imagenes/013.jpg" alt="">
+          <div class="iconos_figure">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+          <div class="descripcion_figure">
+            <h3>George Wilson</h3>
+            <p>Business Consultant</p>
+          </div>
+        </figure>
+        <figure class="persona">
+          <img src="imagenes/014.jpg" alt="">
+          <div class="iconos_figure">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+          </div>
+          <div class="descripcion_figure">
+            <h3>Madison Nguyen</h3>
+            <p>Web Developer</p>
+          </div>
+        </figure>
+      </div>
+    </div>
+  </section>
+<!-- Fin hover redes -->
+
+
+  <br><br><br><br><br><br><br>
+
+
+
+
+
+<!-- Iconos -->
+  <section class="container_iconos_casifinal" id="inicio6">
+    <div class="container_article_iconos_casifinal ">
+      <article>
+        <i class="fa-solid fa-spider"></i>
+        <br>
+        <h3>500</h3>
+        <br>
+        <p>Project Done</p>
+      </article>
+      <article>
+        <i class="fa-solid fa-gas-pump"></i>
+        <br>
+        <h3>250 +</h3>
+        <br>
+        <p>Satisfied</p>
+      </article>
+      <article>
+        <i class="fa-solid fa-users"></i>
+        <br>
+        <h3>120</h3>
+        <br>
+        <p>Expert</p>
+      </article>
+      <article>
+        <i class="fa-solid fa-award"></i>
+        <br>
+        <h3>300 +</h3>
+        <br>
+        <p>Awards</p>
+      </article>
+    </div>
+  </section>
+<!-- Fin Iconos -->
+
+<!-- Videos Responsive -->
+
+  <section class="video_resposive wow animate__animated animate__backInLeft">
+    <div class="video1">
+      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/fNdmEkkW2Bc?si=QisUMMk_BZ4xJVa8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- Fin Video Responsive -->
+
+<!-- Carrusel -->
+  <section class="titulo_carousel" id="inicio7">
+    <div class="titulo_carousel animate__animated animate__fadeInUp ancho">
+      <section class="ancho divisor"> <br>
+        <h2 class="acor">NEWS & <span style="color: white;"> BLOG  </span></h2>
+      </section>
+    </div>
+    </div>
+    <br>
+    <div class="animate__animated animate__fadeInRightBig" id="slider1">
+      <a class="buttons prev" href="#"><i class="fa-solid fa-angle-left"></i></a>
+      <div class="viewport">
+        <ul class="overview">
+          <li>
+            <img src="imagenes/02.jpg" />
+            <h2>Sebastian Turner</h2>
+            <p>Business Consultant</p><br>
+            <div class="contenedor_btn_redes_sociales">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+          </li>
+          <li>
+            <img src="imagenes//03.jpg" />
+            <h2>Stefina Williams</h2>
+            <p>Web Developer</p><br>
+            <div class="contenedor_btn_redes_sociales">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+          </li>
+          <li>
+            <img src="imagenes/04.jpg" />
+            <h2>George Wilson</h2>
+            <p>Business Consultant</p><br>
+            <div class="contenedor_btn_redes_sociales">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+          </li>
+          <li>
+            <img src="imagenes/05.jpg" />
+            <h2>Madison Nguyen</h2>
+            <p>Web Developer</p><br>
+            <div class="contenedor_btn_redes_sociales">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <a class="buttons next" href="#"><i class="fa-solid fa-angle-right"></i></a>
+    </div>
+  </section>
+<!-- Fin Carrusel -->
+
+
+<!-- Footer -->
+  <footer>
+    <div class="container_footer ancho">
+      <div class="logo_p_btns">
+        <img src="imagenes/Imagen1.png" alt="">
+        <br><br>
+        <p>We are experienced professionals who understand that It services is changing, and are a true partners who
+          care about your future.</p>
+        <br><br>
+        <div class="btns_footer">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <article class="help_link">
+        <h4>Quick Links</h4>
+        <br><br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i>  About Us</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i>  FAQ's</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i> Terms Of Service</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i> Privacy policy</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i>  Our Services</a>
+      </article>
+
+      <article class="help_link ">
+        <h4>Our Services</h4>
+        <br><br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right hvr-forward " style="color: #f4930b; "></i> Residential Pest Control</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i>  Commercial Pest Control</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i> Industrial Pest Control</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i> Exclusive Pest Control</a>
+        <br>
+        <a href="#" class="hvr-forward"> <i class="fa-solid fa-caret-right" style="color: #f4930b;"></i>  Pest Prevention</a>
+      </article>
+      <div class="company_info">
+        <h4>Company Info</h4>
+        <br><br>
+        <div class="locations_info">
+          <div class="icono_footer">
+            <i class="fa-solid fa-location-dot" style="color: #f4930b;"></i>
+          </div>
+          <div class="h5_p_footer">
+            <h5>Adress:</h5>
+            <p>3 Belmont Ave. Cumberland</p>
+          </div>
+        </div>
+        <br>
+        <div class="locations_info">
+          <div class="icono_footer">
+            <i class="fa-solid fa-phone-volume"  style="color: #f4930b;"></i>
+          </div>
+          <div class="h5_p_footer">
+            <h5>Phone:</h5>
+            <p>+34783547620</p>
+          </div>
+        </div>
+        <br>
+        <div class="locations_info">
+          <div class="icono_footer">
+            <i class="fa-regular fa-envelope"  style="color: #f4930b;"></i>
+          </div>
+          <div class="h5_p_footer">
+            <h5>Email</h5>
+            <p>example@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="recent_posts">
+        <h4>Recent Posts</h4>
+        <br><br>
+        <div class="img1_p_footer">
+          <div class="foto1_footer">
+            <img src="footer1.jpg" alt="">
+          </div>
+          <div class="p_date_footer">
+            <h6>Define World Technology IT Solution Technology.</h6>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="img1_p_footer">
+          <div class="foto1_footer">
+            <img src="footer2.jpg" alt="">
+          </div>
+          <div class="p_date_footer">
+            <h6>What an great idea to improve.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="about_us_footer ancho">
+      <p class="copyright">Copyright © webx all rights reserved.</p>
+      <div class="btn_finales_footer">
+        <a href="#">About us</a>
+        <a href="#">Services</a>
+        <a href="#">Privacy</a>
+      </div>
+    </div>
+    <br><br>
+  </footer>
+<!-- Fin Footer -->
+
+
+
+<!-- SCRIPS -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#slider1").tinycarousel();
+    });
+  </script>
+
+  <script>
+    $("#icoMenu").click(function () {
+      $("#navMenu").slideToggle();
+    });
+  </script>
+  <script>
+    // Libreria para animaciones WEB
+    new WOW().init();
+  </script>
+
+  <script>
+    //ACORDEON
+
+    $("#titulo1").click(function () {
+      $("#contenido1").slideToggle();
+      $(".mas1").toggleClass("desaparecer");
+    });
+
+    $("#titulo2").click(function () {
+      $("#contenido2").slideToggle();
+      $(".mas1").toggleClass("desaparecer");
+    });
+    $("#titulo3").click(function () {
+      $("#contenido3").slideToggle();
+      $(".mas1").toggleClass("desaparecer");
+    });
+    $("#titulo4").click(function () {
+      $("#contenido4").slideToggle();
+      $(".mas1").toggleClass("desaparecer");
+    });
+
+    // Obtén el elemento del encabezado
+    var heading = document.getElementById("miTexto");
+
+    // Variable para rastrear si el encabezado está en el estado "clicked"
+    var isClicked = false;
+
+    // Agrega un evento de clic al encabezado
+    heading.addEventListener("click", function () {
+      if (!isClicked) {
+        // Agrega la clase "clicked" al encabezado si no está en el estado "clicked"
+        heading.classList.add("clicked");
+        isClicked = true;
+      } else {
+        // Quita la clase "clicked" del encabezado si ya está en el estado "clicked"
+        heading.classList.remove("clicked");
+        isClicked = false;
+      }
+    });
+
+
+    // Obtén el elemento del encabezado
+    var heading2 = document.getElementById("miTexto2");
+
+    // Variable para rastrear si el encabezado está en el estado "clicked"
+    var isClicked = false;
+
+    // Agrega un evento de clic al encabezado
+    heading2.addEventListener("click", function () {
+      if (!isClicked) {
+        // Agrega la clase "clicked" al encabezado si no está en el estado "clicked"
+        heading2.classList.add("clicked");
+        isClicked = true;
+      } else {
+        // Quita la clase "clicked" del encabezado si ya está en el estado "clicked"
+        heading2.classList.remove("clicked");
+        isClicked = false;
+      }
+    });
+
+    // Obtén el elemento del encabezado
+    var heading3 = document.getElementById("miTexto3");
+
+    // Variable para rastrear si el encabezado está en el estado "clicked"
+    var isClicked = false;
+
+    // Agrega un evento de clic al encabezado
+    heading3.addEventListener("click", function () {
+      if (!isClicked) {
+        // Agrega la clase "clicked" al encabezado si no está en el estado "clicked"
+        heading3.classList.add("clicked");
+        isClicked = true;
+      } else {
+        // Quita la clase "clicked" del encabezado si ya está en el estado "clicked"
+        heading3.classList.remove("clicked");
+        isClicked = false;
+      }
+    });
+
+    // Obtén el elemento del encabezado
+    var heading4 = document.getElementById("miTexto4");
+
+    // Variable para rastrear si el encabezado está en el estado "clicked"
+    var isClicked = false;
+
+    // Agrega un evento de clic al encabezado
+    heading4.addEventListener("click", function () {
+      if (!isClicked) {
+        // Agrea la clase "clicked" al encabezado si no está en el estado "clicked"
+        heading4.classList.add("clicked");
+        isClicked = true;
+      } else {
+        // Quita la clase "clicked" del encabezado si ya está en el estado "clicked"
+        heading4.classList.remove("clicked");
+        isClicked = false;
+      }
+    });
+  </script>
+
+
+  <script>
+    var fondomodal = document.getElementById("modal");
+
+    function abrirModal() {
+      fondomodal.style.display = "flex";
+      $("#modal-content").addClass("animate__animated animate__fadeInUp");
+    }
+
+    function cerrarModal() {
+      $("#modal-content").addClass("animate__fadeOutDown");
+      setTimeout(() => {
+        fondomodal.style.display = "none";
+        $("#modal-content").removeClass("animate__fadeOutDown");
+      }, 500);
+    }
+
+    window.onclick = function (event) {
+      if (event.target == fondomodal) {
+        $("#modal-content").addClass("animate__fadeOutDown");
+        setTimeout(() => {
+          fondomodal.style.display = "none";
+          $("#modal-content").removeClass("animate__fadeOutDown");
+        }, 500);
+      }
+    };
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("#subir").click(function () {
+        $("html,body").animate({
+            scrollTop: "0px",
+          },
+          1000
+        );
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
